@@ -1,0 +1,56 @@
+body { 
+	/*margin: 25px 650px 75px 25px;*/
+	display: inline-block;
+	margin: 20px, 20px auto;
+}
+
+h2.title{ 
+	text-shadow: 2px 2px 45px black;
+	text-decoration: underline;
+ }
+
+legend { color: #A0522D }
+
+fieldset { 
+  border-radius: 8px;
+}
+
+#phoneFirstPart {
+	width: 4%;
+}
+
+#phoneSecondPart {
+	width: 4%;
+}
+
+#phoneThirdPart {
+	width: 5%;
+}
+
+#email {
+	width: 50%;
+}
+
+#age {
+	width: 6%;
+}
+
+#heightFeet {
+	width: 4%;
+}
+
+#heightInches {
+	width: 5%;
+}
+
+#weight {
+	width: 6%;
+}
+
+#firstFourDigits {
+	width: 7%;
+}
+
+#secondFourDigits {
+	width: 7%;
+}

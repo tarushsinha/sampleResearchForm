@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<!-- include charset="utf-8" for bootstrap -->
+				<meta charset="utf-8" />
+				<!-- Webpage Description -->
+				<meta name="description" content="This is my third project for CMSC389J for Winter 2018" />
+				<!-- Webpage SEO tags -->
+				<meta name="keywords" content="Tarush Sinha, CMSC389J, UMD, HTML, CSS, JS, PHP, Project 3" />
+				<!-- Stylesheets -->
+				<link rel="stylesheet" href="research.css" />
+				<!-- Scripts -->
+				<script src="research.js"></script>
+				<!-- Webpage Title -->
+		 		<title>Research Form</title>
+		</head>
+
+		<body>
+				<h2 class="title">Research Form</h2>
+				<form action="researchProcessing.php" method="get">
+            <fieldset>
+                <legend><em>General Information</em></legend>
+                
+                Firstname: <input id="firstname" type="text" name="firstname" required/>
+                Lastname: <input id="lastname" type="text" name="lastname" required/> 
+
+                <br />
+                <br />
+
+                Phone: <input id="phoneFirstPart" type="text" name="phoneFirstPart" required/>
+                - <input id="phoneSecondPart" type="text" name="phoneSecondPart" required/>
+                - <input id="phoneThirdPart" type="text" name="phoneThirdPart" required/>
+
+                Email: <input id="email" type="email" name="email" required/>
+            </fieldset>	
+
+            <br />
+
+						<fieldset>
+						  	<legend><em>Research Study Data</em></legend>
+
+						  	<fieldset>
+						  			<legend>Age/Height/Weight</legend>
+
+						  			<strong>Age: </strong><input id="age" type="number" name="age" min="1" max="125" required/>
+						  			&nbsp; &nbsp; &nbsp;
+						  			<strong>Height: </strong><input id="heightFeet" type="number" name="heightFeet" min="2" max="7"required/> <em>Feet</em>
+						  			<input id="heightInches" type="number" name="heightInches" min="0" max="11" required/> <em>Inches</em>
+						  			&nbsp; &nbsp; &nbsp; &nbsp;
+						  			<strong>Weight: </strong><input id="weight" type="number" name="weight" min="1" max="600" required/> <em>Pounds</em>
+						  	</fieldset>
+
+						  	<fieldset>
+						  			<legend>Conditions</legend>
+						  			Which of the following conditions are present in your family? (Check all that apply) 
+
+						  			<br />
+
+						  			<input id="highBloodPressure" type="checkbox" name="highBloodPressure" value="highBloodPressure" /> High Blood Pressure
+						  			<input id="diabetes" type="checkbox" name="diabetes" value="diabetes" /> Diabetes
+						  			<input id="glaucoma" type="checkbox" name="glaucoma" value="glaucoma" /> Glaucoma
+						  			<input id="asthma" type="checkbox" name="asthma" value="asthma" /> Asthma
+						  			<input id="none" type="checkbox" name="none" value="none" /> None
+								</fieldset>
+
+								<fieldset>
+										<legend>Time Period</legend>
+										How long have you experienced any of the above conditions?
+
+										<br />
+
+										<input id="never" name="period" value="never" type="radio" /> Never
+										<input id="lessyear" name="period" value="lessyear" type="radio" /> Less than a year
+										<input id="onetwoyear" name="period" value="onetwoyear" type="radio" /> One to two years
+										<input id="moretwoyears" name="period" value="moretwoyears" type="radio" /> More than two years
+								</fieldset>
+
+								<fieldset>
+										<legend>Study Information</legend>
+										Which study are you taking part of?
+										
+										<select name="studyType">
+											<option value="Short-Term">Short-Term</option>
+											<option value="Long-Term" selected="selected">Long-Term</option>
+										</select>
+
+										&nbsp; &nbsp;
+
+										Assigned Study Id: <input id="firstFourDigits" type="text" name="firstFourDigits" value="A234" required/>
+		                - <input id="secondFourDigits" type="text" name="secondFourDigits" value="B756" required/>
+								</fieldset>
+
+								<fieldset>
+										<legend>Additional Information (Comments)</legend>
+
+										<textarea name="comments" rows="5" cols="90">Additional family members can participate
+										</textarea>
+								</fieldset>
+						</fieldset>
+
+						<br />
+
+						<fieldset>
+								<input type="reset" value ="Clear Form" />
+                <input type="submit" value="Submit Information" />
+						</fieldset>
+        </form>
+    </body>
+</html>
